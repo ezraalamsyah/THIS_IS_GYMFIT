@@ -1,75 +1,51 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="venueBooking.aspx.cs" Inherits="GYMFIT.venueBooking" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <table style="width:100%">
-        <tr>
-            <td colspan="2">Book a Venue</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <hr />
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>Venue:</td>
-            <td>Pax:</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width:280px;">
-                <asp:DropDownList ID="DropDownList1" runat="server" Width="280px">
-                </asp:DropDownList>
-            </td>
-            <td>
-                <asp:DropDownList ID="DropDownList4" runat="server" Width="282px">
-                </asp:DropDownList>
-            </td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style1">Date:</td>
-            <td>Time:</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style1">
-                <asp:DropDownList ID="DropDownList2" runat="server" Width="280px">
-                </asp:DropDownList>
-            </td>
-            <td>
-                <asp:DropDownList ID="DropDownList3" runat="server" Width="278px">
-                </asp:DropDownList>
-            </td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style1">Purpose:</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <asp:TextBox ID="TextBox1" runat="server" Width="901px"></asp:TextBox>
-            </td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
+<div style="text-align:center">
+        <b>BOOK A VENUE</b>
+        <hr />
+    </div>
+
+    <div style="width: 49%; display:inline-block; vertical-align:top;">
+        <div style="width: 49%; height: 50%; background-color: aqua; display:inline-block;">
+            VENUE:<br />
+            <asp:DropDownList ID="DropDownList1" runat="server" style="width:75%;"></asp:DropDownList>
+
+        </div>
+        <div style="width: 49%; height: 50%; background-color: yellow; display:inline-block;">
+            PAX:<br />
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        </div>
+        <div style="width: 49%; height: 50%; background-color: aqua; display:inline-block;">
+            DATE:<br />
+                <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList>
+
+        </div>
+        <div style="width: 49%; height: 50%; background-color: yellow; display:inline-block;">
+            TIME<br />
+                <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
+        </div>
+        <div style=""width: 99%;">
+            PURPOSE:<br />
+            <asp:TextBox ID="TextBox2" runat="server" style="width:100%"></asp:TextBox>
+            <asp:Button ID="Button1" runat="server" Text="BOOK NOW!" style="width:100%; -moz-border-radius: 15px;
+                            -webkit-border-radius: 15px; border-radius: 15px; " />
+        </div>
+
+    </div>
+
+    <div style="width: 49%; display:inline-block;" >
+
+        ROOMS <br />
+        AVAILABLE<br />
+
+        <asp:Image ID="Image1" runat="server" />
+        <asp:Image ID="Image2" runat="server" />
+        <asp:Image ID="Image3" runat="server" />
+    </div>
+    
+    
+    
+    
 </asp:Content>
-<asp:Content ID="Content2" runat="server" contentplaceholderid="HeaderContent">
-    <style type="text/css">
-        .auto-style1 {
-            width: 602px;
-        }
-    </style>
-</asp:Content>
+
 
