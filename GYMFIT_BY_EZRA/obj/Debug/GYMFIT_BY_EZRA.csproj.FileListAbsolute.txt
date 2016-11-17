@@ -31,3 +31,36 @@ c:\users\foofoo\documents\visual studio 2015\Projects\GYMFIT_BY_EZRA\GYMFIT_BY_E
 c:\users\foofoo\documents\visual studio 2015\Projects\GYMFIT_BY_EZRA\GYMFIT_BY_EZRA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 c:\users\foofoo\documents\visual studio 2015\Projects\GYMFIT_BY_EZRA\GYMFIT_BY_EZRA\obj\Debug\GYMFIT_BY_EZRA.dll
 c:\users\foofoo\documents\visual studio 2015\Projects\GYMFIT_BY_EZRA\GYMFIT_BY_EZRA\obj\Debug\GYMFIT_BY_EZRA.pdb
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\ApplicationInsights.config
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\csc.exe
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\System.Collections.Immutable.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\System.Reflection.Metadata.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\vbc.exe
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\VBCSCompiler.exe
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\roslyn\VBCSCompiler.exe.config
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\GYMFIT_BY_EZRA.dll.config
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\GYMFIT_BY_EZRA.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\GYMFIT_BY_EZRA.pdb
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.DependencyCollector.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.Web.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.WindowsServer.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.ApplicationInsights.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.DependencyCollector.xml
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.Web.xml
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.AI.WindowsServer.xml
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.ApplicationInsights.xml
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\obj\Debug\GYMFIT_BY_EZRA.csprojResolveAssemblyReference.cache
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\obj\Debug\GYMFIT_BY_EZRA.dll
+Z:\GitHub\THIS_IS_GYMFIT\GYMFIT_BY_EZRA\obj\Debug\GYMFIT_BY_EZRA.pdb

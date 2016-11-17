@@ -36,7 +36,7 @@
      </div>
 
             <div align ="center">
-                <asp:Button ID="Button1" runat="server" Text="Button" />
+                <asp:Button ID="Button1" runat="server" Text="SELECT TRAINER" BackColor="Red" />
      </div>
             
         </div>
