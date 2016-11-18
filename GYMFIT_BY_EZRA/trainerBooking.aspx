@@ -12,31 +12,34 @@
 
             Type of Trainer:
             <div align ="left">
-                <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="DDLTrainerType" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+                
             </div>
+            <asp:RequiredFieldValidator ID="RFVTrainerType" ControlToValidate="DDLTrainerType" runat="server" ErrorMessage="Please Determine the Trainer Type"></asp:RequiredFieldValidator>
+         </div>
             
-            </div>
         <div style="float:right; width:49%;">
             Budget:
             <div align ="left">
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            </div>
-            </div>
-        <div>
-
+                <asp:TextBox ID="TBBudget" runat="server" OnTextChanged="TBBudget_TextChanged"></asp:TextBox>
+             <div>
+             <asp:RequiredFieldValidator ID="RFVBudget" ControlToValidate="TBBudget" runat="server" ErrorMessage="Please Enter your Budget"></asp:RequiredFieldValidator> </div>
+            <asp:RegularExpressionValidator ID="REVBudget" ControlToValidate="TBBudget" runat="server" ValidationExpression="^\d+$" ErrorMessage="RegularExpressionValidator"></asp:RegularExpressionValidator></div>
+        
         </div>
-        <div>
+        
+     <div>
             Results:
             <div>
-                <asp:ListBox ID="ListBox1" runat="server" Width="457px"></asp:ListBox>
+                <asp:ListBox ID="LBResults" runat="server" Width="457px" OnSelectedIndexChanged="LBResults_SelectedIndexChanged"></asp:ListBox>
             </div>
-
+         <asp:RequiredFieldValidator ID="RFVResults" ControlToValidate="LBResults" runat="server" ErrorMessage="Please pick your Trainer"></asp:RequiredFieldValidator>
             <div>
     
      </div>
 
             <div align ="center">
-                <asp:Button ID="Button1" runat="server" Text="SELECT TRAINER" BackColor="Red" />
+                <asp:Button ID="BtnSubmit" runat="server" Text="SELECT TRAINER" BackColor="Red" OnClick="BtnSubmit_Click" />
      </div>
             
         </div>

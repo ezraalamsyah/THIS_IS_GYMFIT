@@ -13,5 +13,12 @@ namespace GYMFIT
         {
 
         }
+
+        protected void BtnSubmit_Click(object sender, EventArgs e)
+        {
+            String Trainer = DDLTrainerType.SelectedItem.Text;
+            String Budget = TBBudget.Text;
+            String Results = LBResults.SelectedItem.Text;
+        }
     }
 }
