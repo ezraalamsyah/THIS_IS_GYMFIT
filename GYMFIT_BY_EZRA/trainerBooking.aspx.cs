@@ -20,5 +20,10 @@ namespace GYMFIT
             String Budget = TBBudget.Text;
             String Results = LBQueryResults.SelectedItem.Text;
         }
+
+        protected void btnTrainerSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

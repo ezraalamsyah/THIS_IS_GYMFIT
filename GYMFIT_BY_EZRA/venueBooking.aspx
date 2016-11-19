@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="venueBooking.aspx.cs" Inherits="GYMFIT.venueBooking" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<div style="text-align:center">
+    <div style="text-align:center">
        <b>BOOK A VENUE</b>
         <hr />
     </div>
@@ -30,8 +30,8 @@
             <asp:TextBox ID="tbPurpose" runat="server" style="width:100%; height:50px;" TextMode="MultiLine"></asp:TextBox>
 
             <asp:RangeValidator ID="rvPax" Type="Integer" ControlToValidate="tbPax" MinimumValue="1" MaximumValue="50" 
-                ErrorMessage="Venue cannot fit more than 50 people!" runat="server" style="color:red; font-weight:bold;"></asp:RangeValidator>
-
+                ErrorMessage="Venue cannot fit more than 50 people!" runat="server" style="color:red; font-weight:bold;" Display="Dynamic" ></asp:RangeValidator>
+            <asp:RequiredFieldValidator ID="rfvPax" runat="server" ControlToValidate="tbPax" ErrorMessage="Number of Pax required!" Display="Dynamic" style="color:red; font-weight:bold"></asp:RequiredFieldValidator>
             <asp:Button ID="btnVenueSubmit" runat="server" Text="BOOK NOW!" style="width:100%; -moz-border-radius: 15px;
                             -webkit-border-radius: 15px; border-radius: 15px; " OnClick="Button1_Click" />
         </div>
