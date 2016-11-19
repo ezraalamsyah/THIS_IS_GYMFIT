@@ -13,67 +13,67 @@ namespace GYMFIT {
     public partial class trainerBooking {
         
         /// <summary>
-        /// DropDownList1 control.
+        /// DDLTrainerType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList DDLTrainerType;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// RFVTrainerType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVTrainerType;
         
         /// <summary>
-        /// TextBox1 control.
+        /// TBBudget control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TBBudget;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// RFVBudget control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVBudget;
         
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// REVBudget control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVBudget;
         
         /// <summary>
-        /// lbQueryResult control.
+        /// LBQueryResults control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lbQueryResult;
+        protected global::System.Web.UI.WebControls.ListBox LBQueryResults;
         
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// RFVQueryResults control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVQueryResults;
         
         /// <summary>
         /// btnTrainerSubmit control.

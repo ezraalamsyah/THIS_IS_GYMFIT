@@ -12,23 +12,23 @@
 
             Type of Trainer:<br />
 
-                <asp:DropDownList ID="DropDownList1" runat="server" style="width:75%;"></asp:DropDownList>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="DDLTrainerType" runat="server" ErrorMessage="Please Determine the Trainer Type"></asp:RequiredFieldValidator>
+                <asp:DropDownList ID="DDLTrainerType" runat="server" style="width:75%;"></asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RFVTrainerType" ControlToValidate="DDLTrainerType" runat="server" ErrorMessage="Please Determine the Trainer Type"></asp:RequiredFieldValidator>
             
          </div>
         <div style="display:inline-block; width:49%;">
             Budget:<br />
 
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="TBBudget" runat="server" ErrorMessage="Please Enter your Budget"></asp:RequiredFieldValidator> 
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="TBBudget" runat="server" ValidationExpression="^\d+$" ErrorMessage="RegularExpressionValidator"></asp:RegularExpressionValidator>
+                <asp:TextBox ID="TBBudget" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RFVBudget" ControlToValidate="TBBudget" runat="server" ErrorMessage="Please Enter your Budget"></asp:RequiredFieldValidator> 
+            <asp:RegularExpressionValidator ID="REVBudget" ControlToValidate="TBBudget" runat="server" ValidationExpression="^\d+$" ErrorMessage="RegularExpressionValidator"></asp:RegularExpressionValidator>
         </div>
 
         <div>
             Results:
             <div>
-                <asp:ListBox ID="lbQueryResult" runat="server" Width="100%"></asp:ListBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="LBResults" runat="server" ErrorMessage="Please pick your Trainer"></asp:RequiredFieldValidator>
+                <asp:ListBox ID="LBQueryResults" runat="server" Width="100%"></asp:ListBox>
+                <asp:RequiredFieldValidator ID="RFVQueryResults" ControlToValidate="LBQueryResults" runat="server" ErrorMessage="Please pick your Trainer"></asp:RequiredFieldValidator>
             </div>
 
                 <asp:Button ID="btnTrainerSubmit" runat="server" Text="BOOK NOW!" style="width:100%; -moz-border-radius: 15px;

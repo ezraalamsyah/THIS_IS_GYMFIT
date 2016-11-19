@@ -18,7 +18,7 @@ namespace GYMFIT
         {
             String Trainer = DDLTrainerType.SelectedItem.Text;
             String Budget = TBBudget.Text;
-            String Results = LBResults.SelectedItem.Text;
+            String Results = LBQueryResults.SelectedItem.Text;
         }
     }
 }
