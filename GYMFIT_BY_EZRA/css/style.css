@@ -29,29 +29,52 @@ body{
     bottom: 35px;
 }
 .page-content{
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     padding-top: 100px;
     height: 700px;
 }
 #Login{
-  background: url('../img/testimonial_fullwidth_bg.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(../img/testimonial_fullwidth_bg.jpg); 
 }
 #Register{
-  background: url('../img/home-banner.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(../img/home-banner.jpg); 
 }
-#home_user{
-  background: url('../img/home-testimonial-bg.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#Home{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(../img/home-testimonial-bg.jpg); 
+}
+#VenueBooking{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0)),
+        url(../img/gym_bkgd_bw-compressor.jpg); 
+}
+#FindTrainer{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(../img/home_img-compressor.jpg); 
+}
+#FindTrainer p,
+#VenueBooking p{
+    color: #fff;
+    text-align: left;
+}
+#VenueBooking .page-desc img{
+    height: 80px;
+}
+#VenueBooking .page-desc p{
+    font-size: 24px;
 }
 #Login .page-desc{
   margin-top: 20px;
@@ -136,10 +159,16 @@ body{
   margin-top: 10px;
   margin-bottom: 15px;
 }
-.default-form input[type="submit"]{
+.default-form input[type="submit"],
+input[type="submit"].default-btn,
+.default-btn{
   color: #fff;
   background-color: #ed1c24;
+  border-radius: 5px;
+  border: none;
   padding: 10px;
+  margin-bottom: 10px;
+  width: 80%;
 }
 .main-menu > a:first-child > img{
   display: none;
@@ -180,6 +209,44 @@ body{
 .navbar .menu-item:focus,
 .navbar .menu-item:active{
   text-decoration: none;
+}
+.services-desc h2,
+.services-desc p{
+    color: #fff;
+    font-size: 18px;
+}
+.services-desc a{
+    display: block;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    padding: 25px 30px;
+}
+.services-desc h2{
+    color: #fff;
+    font-size: 28px;
+    line-height: normal;
+}
+.services-desc a .fa{
+    color: #fff;
+    display: inline-block;
+    float: right;
+}
+.service-trainer{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(../img/home_img-compressor.jpg); 
+}
+.service-venuebooking{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(../img/book-venue-banner.jpg);
 }
 ::-webkit-input-placeholder {
    color: #B5B8BB;

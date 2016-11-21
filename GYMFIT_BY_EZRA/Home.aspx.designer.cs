@@ -13,30 +13,30 @@ namespace GYMFIT {
     public partial class homeUser {
         
         /// <summary>
-        /// btnGetMember control.
+        /// BtnGetMembership control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGetMember;
+        protected global::System.Web.UI.WebControls.Button BtnGetMembership;
         
         /// <summary>
-        /// btnTrainer control.
+        /// TrainerLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnTrainer;
+        protected global::System.Web.UI.WebControls.HyperLink TrainerLink;
         
         /// <summary>
-        /// btnVenue control.
+        /// VenueBookingLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnVenue;
+        protected global::System.Web.UI.WebControls.HyperLink VenueBookingLink;
     }
 }

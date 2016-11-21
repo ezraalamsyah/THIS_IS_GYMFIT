@@ -14,14 +14,14 @@ namespace GYMFIT
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void BtnSubmitVenueBooking_Click(object sender, EventArgs e)
         {
-            string venue = ddlVenue.SelectedValue;
-            int pax = Int32.Parse(tbPax.Text);
+            string venue = DDLVenue.SelectedValue;
+            int pax = Int32.Parse(TBPax.Text);
             //DateTime date = Convert.ToDateTime(ddlDate.SelectedValue);
             //lmao what data type is date?
             //DateTime time = Convert.ToDateTime(ddlTime);
-            string purpose = tbPurpose.Text;
+            string purpose = TBPurpose.Text;
 
             //Response.Redirect()?
         }

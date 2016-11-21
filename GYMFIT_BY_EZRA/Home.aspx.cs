@@ -14,15 +14,9 @@ namespace GYMFIT
 
         }
 
-        protected void btnTrainer_Click(object sender, ImageClickEventArgs e)
+        protected void BtnGetMembership_Click(object sender, EventArgs e)
         {
-            //response.redirect?
-           
-        }
-
-        protected void btnVenue_Click(object sender, ImageClickEventArgs e)
-        {
-            //response.redirect?
+            
         }
     }
 }

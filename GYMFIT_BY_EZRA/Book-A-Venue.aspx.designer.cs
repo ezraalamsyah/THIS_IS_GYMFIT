@@ -10,78 +10,69 @@
 namespace GYMFIT {
     
     
-    public partial class trainerBooking {
+    public partial class venueBooking {
         
         /// <summary>
-        /// DDLTrainerType control.
+        /// DDLVenue control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLTrainerType;
+        protected global::System.Web.UI.WebControls.DropDownList DDLVenue;
         
         /// <summary>
-        /// RFVTrainerType control.
+        /// TBPax control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVTrainerType;
+        protected global::System.Web.UI.WebControls.TextBox TBPax;
         
         /// <summary>
-        /// TBBudget control.
+        /// TBPurpose control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBBudget;
+        protected global::System.Web.UI.WebControls.TextBox TBPurpose;
         
         /// <summary>
-        /// RFVBudget control.
+        /// BtnSubmitVenueBooking control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVBudget;
+        protected global::System.Web.UI.WebControls.Button BtnSubmitVenueBooking;
         
         /// <summary>
-        /// REVBudget control.
+        /// ImgYoga control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVBudget;
+        protected global::System.Web.UI.WebControls.Image ImgYoga;
         
         /// <summary>
-        /// LBQueryResults control.
+        /// ImgFitness control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox LBQueryResults;
+        protected global::System.Web.UI.WebControls.Image ImgFitness;
         
         /// <summary>
-        /// RFVQueryResults control.
+        /// ImgDance control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVQueryResults;
-        
-        /// <summary>
-        /// btnTrainerSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnTrainerSubmit;
+        protected global::System.Web.UI.WebControls.Image ImgDance;
     }
 }
