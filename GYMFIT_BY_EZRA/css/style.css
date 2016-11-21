@@ -168,7 +168,12 @@ input[type="submit"].default-btn,
   border: none;
   padding: 10px;
   margin-bottom: 10px;
-  width: 80%;
+  width: 100%;
+}
+.default-form span{
+    display: block;
+    color: #fff;
+    font-size: 16px;
 }
 .main-menu > a:first-child > img{
   display: none;
@@ -217,9 +222,6 @@ input[type="submit"].default-btn,
 }
 .services-desc a{
     display: block;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

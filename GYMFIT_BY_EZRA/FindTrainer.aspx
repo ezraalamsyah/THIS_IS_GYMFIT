@@ -24,6 +24,11 @@
                                 <asp:ListBox ID="LBTrainerResult" runat="server"></asp:ListBox>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <asp:Label ID="ListBox1" runat="server"></asp:Label>
+                            </div>
+                        </div>
                         <asp:Button id="BtnSelectTrainer" Text="Select Trainer" OnClick="BtnSelectTrainer_Click"  runat="server" />
                     </div>  
                 </div>

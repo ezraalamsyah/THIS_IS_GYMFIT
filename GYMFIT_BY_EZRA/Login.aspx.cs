@@ -40,7 +40,7 @@ namespace GYMFIT
                     }
                     else
                     {
-                        LblLoginStatus.Text = "Password is " + tempPass + password + "Invalid Password. Please try again.";
+                        LblLoginStatus.Text = "Invalid Password. Please try again.";
                     }
                 }
                 catch (SqlException oError) {
