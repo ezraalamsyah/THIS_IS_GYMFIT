@@ -15,8 +15,8 @@
                         <h2>REGISTER NOW</h2>
                         <hr />
                         <asp:TextBox id="TBEmail" placeholder="Email" runat="server"></asp:TextBox>
-                        <asp:TextBox id="TBPassword" placeholder="Password" runat="server"></asp:TextBox>
-                        <asp:TextBox id="TBConfirmPassword" placeholder="Confirm Password" runat="server"></asp:TextBox>
+                        <asp:TextBox id="TBPassword" TextMode="Password" placeholder="Password" runat="server"></asp:TextBox>
+                        <asp:TextBox id="TBConfirmPassword" TextMode="Password" placeholder="Confirm Password" runat="server"></asp:TextBox>
                         <div class="row">
                         <div class="col-md-6">
                             <asp:TextBox id="TBFirstName" placeholder="First Name" runat="server"></asp:TextBox>
@@ -38,6 +38,7 @@
                         </div>
                         <asp:TextBox id="TBAddress" placeholder="Address" runat="server"></asp:TextBox>
                         <asp:Button id="BtnRegister" runat="server" Text="REGISTER" OnClick="BtnRegister_Click" />
+                        <asp:Label ID="LblRegisterStatus" runat="server"></asp:Label>
                     </div>
                 </div>
             </div>

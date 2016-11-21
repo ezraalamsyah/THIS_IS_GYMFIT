@@ -9,8 +9,9 @@
                         <h2>LOGIN INTO YOUR ACCOUNT</h2>
                         <hr />
                         <asp:TextBox id="TBEmail" placeholder="Email" runat="server"></asp:TextBox>
-                        <asp:TextBox id="TBPassword" placeholder="Password" runat="server"></asp:TextBox>
+                        <asp:TextBox id="TBPassword" TextMode="Password" placeholder="Password" runat="server"></asp:TextBox>
                         <asp:Button id="BtnLogin" runat="server" Text="LOG IN" OnClick="BtnLogin_Click" />
+                        <asp:Label id="LblLoginStatus" runat="server"></asp:Label>
                     </div>  
                 </div>
                 <!-- 2ND HALF - LOGIN DESCRIPTION -->

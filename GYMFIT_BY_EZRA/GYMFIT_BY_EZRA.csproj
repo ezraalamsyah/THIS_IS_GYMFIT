@@ -94,6 +94,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\GYMFITDatabase.mdf" />
+    <Content Include="App_Data\GYMFITDatabase_log.ldf">
+      <DependentUpon>GYMFITDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -115,6 +119,7 @@
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="FindTrainer.aspx" />
+    <Content Include="Testing.aspx" />
     <Content Include="userProfile.aspx" />
     <Content Include="Book-A-Venue.aspx" />
     <Content Include="Web.config" />
@@ -185,6 +190,13 @@
     <Compile Include="FindTrainer.aspx.designer.cs">
       <DependentUpon>FindTrainer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Testing.aspx.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testing.aspx.designer.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="userProfile.aspx.cs">
       <DependentUpon>userProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -201,7 +213,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="fonts\" />
     <Folder Include="Scripts\" />
     <Folder Include="Stylesheets\" />
