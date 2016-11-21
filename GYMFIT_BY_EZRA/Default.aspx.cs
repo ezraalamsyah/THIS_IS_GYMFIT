@@ -13,5 +13,8 @@ namespace GYMFIT
         {
 
         }
+        protected void BtnRegister_Click(object sender, EventArgs e) {
+           
+        }
     }
 }

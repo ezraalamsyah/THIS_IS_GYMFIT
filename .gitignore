@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*.config
+
+.vs/GYMFIT_BY_EZRA/v14/.suo
+
+*.cache
