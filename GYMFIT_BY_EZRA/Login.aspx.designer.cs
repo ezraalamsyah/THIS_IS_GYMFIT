@@ -10,7 +10,7 @@
 namespace GYMFIT {
     
     
-    public partial class Register {
+    public partial class Login {
         
         /// <summary>
         /// TBEmail control.

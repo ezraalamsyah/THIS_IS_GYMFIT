@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="GYMFIT.Register" %>
-<asp:Content ID="RegisterPage" ContentPlaceHolderID="MainContent" runat="server">
-    <div id="Register" class="page-content">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="GYMFIT.Login" %>
+<asp:Content ID="LoginPage" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="Login" class="page-content">
         <div class="container">
             <div class="row">
                 <!-- 1ST HALF - LOGIN FORM -->
@@ -8,9 +8,9 @@
                     <div class="default-form login-form">
                         <h2>LOGIN INTO YOUR ACCOUNT</h2>
                         <hr />
-                        <asp:TextBox id="TBEmail" runat="server">Email</asp:TextBox>
-                        <asp:TextBox id="TBPassword" runat="server">Password</asp:TextBox>
-                        <asp:Button id="BtnLogin" runat="server" Text="REGISTER" OnClick="BtnLogin_Click" />
+                        <asp:TextBox id="TBEmail" placeholder="Email" runat="server"></asp:TextBox>
+                        <asp:TextBox id="TBPassword" placeholder="Password" runat="server"></asp:TextBox>
+                        <asp:Button id="BtnLogin" runat="server" Text="LOG IN" OnClick="BtnLogin_Click" />
                     </div>  
                 </div>
                 <!-- 2ND HALF - LOGIN DESCRIPTION -->

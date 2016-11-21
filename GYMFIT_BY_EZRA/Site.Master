@@ -31,7 +31,7 @@
             <div class="container main-menu navbar">
                 <ul>
                     <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Default.aspx" runat="server">Register</asp:HyperLink></li>
-                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Register.aspx" runat="server">Login</asp:HyperLink></li>
+                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Login.aspx" runat="server">Login</asp:HyperLink></li>
                 </ul>
             </div>
         </div>

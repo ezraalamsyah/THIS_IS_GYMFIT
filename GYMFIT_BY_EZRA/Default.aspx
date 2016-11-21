@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GYMFIT._Default" %>
-<asp:Content ID="LoginPage" ContentPlaceHolderID="MainContent" runat="server">
-    <div id="Login" class="page-content">
+<asp:Content ID="RegisterPage" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="Register" class="page-content">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 page-desc">
@@ -14,29 +14,29 @@
                     <div class="default-form login-form">
                         <h2>REGISTER NOW</h2>
                         <hr />
-                        <asp:TextBox id="TextBox1" runat="server">Email</asp:TextBox>
-                        <asp:TextBox id="TextBox2" runat="server">Password</asp:TextBox>
-                        <asp:TextBox id="TBConfirmPassword" runat="server">Confirm Password</asp:TextBox>
+                        <asp:TextBox id="TBEmail" placeholder="Email" runat="server"></asp:TextBox>
+                        <asp:TextBox id="TBPassword" placeholder="Password" runat="server"></asp:TextBox>
+                        <asp:TextBox id="TBConfirmPassword" placeholder="Confirm Password" runat="server"></asp:TextBox>
                         <div class="row">
                         <div class="col-md-6">
-                            <asp:TextBox id="TBFirstName" runat="server">First Name</asp:TextBox>
+                            <asp:TextBox id="TBFirstName" placeholder="First Name" runat="server"></asp:TextBox>
                         </div>
                         <div class="col-md-6">
-                            <asp:TextBox id="TBLastName" runat="server">Last Name</asp:TextBox>
+                            <asp:TextBox id="TBLastName" placeholder="Last Name" runat="server"></asp:TextBox>
                         </div>
                         </div>
                         <div class="row">
                         <div class="col-md-4">
                             <asp:DropDownList id="DDLGender" runat="server">
-                            <asp:ListItem>Male</asp:ListItem>
-                            <asp:ListItem>Female</asp:ListItem>
+                            <asp:ListItem value="0">Male</asp:ListItem>
+                            <asp:ListItem Value="1">Female</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                         <div class="col-md-8">
-                            <asp:TextBox id="TBPhoneNo" runat="server">Phone Number</asp:TextBox>
+                            <asp:TextBox id="TBPhoneNo" placeholder="Phone Number" runat="server"></asp:TextBox>
                         </div>
                         </div>
-                        <asp:TextBox id="TBAddress" runat="server">Address</asp:TextBox>
+                        <asp:TextBox id="TBAddress" placeholder="Address" runat="server"></asp:TextBox>
                         <asp:Button id="BtnRegister" runat="server" Text="REGISTER" OnClick="BtnRegister_Click" />
                     </div>
                 </div>

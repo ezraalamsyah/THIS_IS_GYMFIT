@@ -14,7 +14,14 @@ namespace GYMFIT
 
         }
         protected void BtnRegister_Click(object sender, EventArgs e) {
-           
+            String email = TBEmail.Text;
+            String password = TBPassword.Text;
+            String name = TBFirstName.Text + TBLastName.Text;
+            String gender = DDLGender.SelectedValue;
+            String phoneNo = TBPhoneNo.Text;
+            String address = TBAddress.Text;
+
+
         }
     }
 }

@@ -7,15 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace GYMFIT
 {
-    public partial class Register : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        protected void BtnRegister_Click(Object sender, EventArgs e)
+        protected void BtnLogin_Click(Object sender, EventArgs e)
         {
-
+            String email = TBEmail.Text;
+            String password = TBPassword.Text;
         }
     }
 }
