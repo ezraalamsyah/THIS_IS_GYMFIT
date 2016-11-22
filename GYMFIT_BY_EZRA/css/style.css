@@ -154,6 +154,7 @@ body{
   display: block;
   font-size: 18px;
   line-height: normal;
+  margin-top: 0px;
 }
 .default-form hr{
   margin-top: 10px;
@@ -249,6 +250,32 @@ input[type="submit"].default-btn,
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)),
         url(../img/book-venue-banner.jpg);
+}
+.trainers-list .col-md-12{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.trainers-list select {
+    border-radius: 0px;
+    height: 60px;
+    padding: 5px;
+}
+.trainers-list select option {
+    border-bottom: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.trainers-list select option:last-child {
+    border-bottom-color: transparent;
+}
+.selected-trainer span{
+    display: inline-block;
+    text-align: left;
+    float: left;
+    margin-bottom: 10px;
+}
+.selected-trainer span:last-child {
+    float: right;
 }
 ::-webkit-input-placeholder {
    color: #B5B8BB;

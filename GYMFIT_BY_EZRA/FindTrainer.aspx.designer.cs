@@ -31,22 +31,40 @@ namespace GYMFIT {
         protected global::System.Web.UI.WebControls.TextBox TBBudget;
         
         /// <summary>
-        /// LBTrainerResult control.
+        /// LBTrainersResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox LBTrainerResult;
+        protected global::System.Web.UI.WebControls.ListBox LBTrainersResult;
         
         /// <summary>
-        /// ListBox1 control.
+        /// SqlDataSourceTrainers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ListBox1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceTrainers;
+        
+        /// <summary>
+        /// LblSelectedTrainer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblSelectedTrainer;
+        
+        /// <summary>
+        /// LblSelectedTrainerFees control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblSelectedTrainerFees;
         
         /// <summary>
         /// BtnSelectTrainer control.

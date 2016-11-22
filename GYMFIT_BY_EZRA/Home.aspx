@@ -12,11 +12,11 @@
                     <h2>Our Services</h2>
                     <p>Explanation</p>
                     <p>We provide you the best trainer.</p>
-                    <asp:HyperLink ID="TrainerLink" CssClass="service-trainer" runat="server">
-                        <h2>Find a Trainer <i class="fa fa-chevron-right"></i></h2>
+                    <asp:HyperLink ID="TrainerLink" NavigateUrl="~/FindTrainer.aspx" CssClass="service-trainer" runat="server">
+                        <h2>Find a Trainer <i class="fa fa-angle-right"></i></h2>
                     </asp:HyperLink>
-                    <asp:HyperLink ID="VenueBookingLink" CssClass="service-venuebooking" runat="server">
-                        <h2>Book a Venue <i class="fa fa-chevron-right"></i></h2>
+                    <asp:HyperLink ID="VenueBookingLink" NavigateUrl="~/Book-A-Venue.aspx" CssClass="service-venuebooking" runat="server">
+                        <h2>Book a Venue <i class="fa fa-angle-right"></i></h2>
                     </asp:HyperLink>
                 </div>
             </div>

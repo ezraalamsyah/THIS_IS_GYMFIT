@@ -11,22 +11,32 @@
                             <div class="col-md-8">
                                 <p>Type of Trainers:</p>
                                 <asp:DropDownList ID="DDLTrainerType" AutoPostBack="True" runat="server">
-
+                                    <asp:ListItem Value="Yoga">Yoga</asp:ListItem>
+                                    <asp:ListItem Value="Fitness">Fitness</asp:ListItem>
+                                    <asp:ListItem Value="Dance">Dancing</asp:ListItem>
+                                    <asp:ListItem Value="ALL">Any</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                             <div class="col-md-4">
                                 <p>Budget (RM):</p>
-                                <asp:TextBox ID="TBBudget" placeholder="eg.2000" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TBBudget" placeholder="eg.2000" AutoPostBack="True" runat="server"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row trainers-list">
+                            <div class="col-md-12">
+                                <asp:ListBox ID="LBTrainersResult" runat="server" AutoPostBack="True" DataSourceID="SqlDataSourceTrainers" DataTextField="sName" DataValueField="sId" OnSelectedIndexChanged="LBTrainersResult_SelectedIndexChanged"></asp:ListBox>
+                                <asp:SqlDataSource ID="SqlDataSourceTrainers" runat="server" ConnectionString="<%$ ConnectionStrings:DatabaseConnectionString %>" SelectCommand="SELECT [sId], [sName], [sEmail], [tFees], [tType] FROM [Staff] WHERE (([tFees] &lt;= @tFees2) AND ([tType] = @tType)) ORDER BY [tFees] DESC">
+                                    <SelectParameters>
+                                        <asp:ControlParameter ControlID="TBBudget" Name="tFees2" PropertyName="Text" Type="Double" DefaultValue="" />
+                                        <asp:ControlParameter ControlID="DDLTrainerType" Name="tType" PropertyName="SelectedValue" Type="String" DefaultValue="" />
+                                    </SelectParameters>
+                                </asp:SqlDataSource>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
-                                <asp:ListBox ID="LBTrainerResult" runat="server"></asp:ListBox>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <asp:Label ID="ListBox1" runat="server"></asp:Label>
+                            <div class="col-md-12 selected-trainer">
+                                <asp:Label ID="LblSelectedTrainer" runat="server">Trainer Name</asp:Label>
+                                <asp:Label ID="LblSelectedTrainerFees" runat="server">Fees</asp:Label>
                             </div>
                         </div>
                         <asp:Button id="BtnSelectTrainer" Text="Select Trainer" OnClick="BtnSelectTrainer_Click"  runat="server" />
