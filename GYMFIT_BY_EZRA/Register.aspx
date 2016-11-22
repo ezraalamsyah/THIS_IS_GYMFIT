@@ -39,6 +39,14 @@
                         <asp:TextBox id="TBAddress" placeholder="Address" runat="server"></asp:TextBox>
                         <asp:Button id="BtnRegister" runat="server" Text="REGISTER" OnClick="BtnRegister_Click" />
                         <asp:Label ID="LblRegisterStatus" runat="server"></asp:Label>
+                        <asp:RequiredFieldValidator ID="RFVEmail" ControlToValidate="TBEmail" runat="server" ErrorMessage="Please Enter Email"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVPassword" ControlToValidate="TBPassword" runat="server" ErrorMessage="Please Enter Password"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVConfirmPassword" ControlToValidate="TBConfirmPassword" runat="server" ErrorMessage="Please Enter Confirm Password"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVFirstName" ControlToValidate="TBFirstName" runat="server" ErrorMessage="Please Enter First Name"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVLastName" ControlToValidate="TBLastName" runat="server" ErrorMessage="Please Enter Last Name"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVGender" ControlToValidate="DDLGender" runat="server" ErrorMessage="Please Pick Gender"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVPhoneNo" ControlToValidate="TBPhoneNo" runat="server" ErrorMessage="Please Enter Phone Number"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVAddress" ControlToValidate="TBAddress" runat="server" ErrorMessage="Please Enter Address"></asp:RequiredFieldValidator>
                     </div>
                 </div>
             </div>
