@@ -19,7 +19,7 @@
     <form runat="server">
         <div class="navbar-fixed container-fluid">
             <div class="container top-navbar">
-                <asp:HyperLink ID="HomePageLink" runat="server">
+                <asp:HyperLink ID="HomePageLink" NavigateUrl="~/Home.aspx" runat="server">
                     <asp:Image ID="Logo" CssClass="logo" runat="server" ImageUrl="~/img/gym-fit-logo-dark.png" />
                 </asp:HyperLink>
             </div>
@@ -30,17 +30,7 @@
         </div>
         <div class="container-fluid navbar-bottom navbar-fixed">
             <div class="container main-menu navbar">
-                <ul>
-                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Default.aspx" runat="server">Register</asp:HyperLink></li>
-                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Login.aspx" runat="server">Login</asp:HyperLink></li>
-                </ul>
-                <ul class="hide">
-                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Home.aspx" runat="server">Home</asp:HyperLink></li>
-                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Book-A-Venue.aspx" runat="server">Venue</asp:HyperLink></li>
-                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/FindTrainer.aspx" runat="server">Trainer</asp:HyperLink></li>
-                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Book-A-Venue.aspx" runat="server">Profile</asp:HyperLink></li>
-                    <li><asp:HyperLink CssClass="menu-item" Target="_self" NavigateUrl="~/Login.aspx" runat="server">Sign out</asp:HyperLink></li>
-                </ul>
+                <asp:Literal ID="LiteralNavigation" runat="server"></asp:Literal>
             </div>
         </div>
     </form>

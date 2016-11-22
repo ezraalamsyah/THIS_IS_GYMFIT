@@ -17,6 +17,7 @@ namespace GYMFIT
             if (!IsPostBack) {
                 ViewState["trainerName"] = "Trainer Name";
                 ViewState["trainerFees"] = "0";
+                ViewState["trainerId"] = "0";
 
                 LblSelectedTrainer.Text = ViewState["trainerName"].ToString();
                 LblSelectedTrainerFees.Text = ViewState["trainerFees"].ToString();
@@ -35,7 +36,7 @@ namespace GYMFIT
             String tName = LBTrainersResult.SelectedItem.ToString();
             ViewState["trainerName"] = tName;
             int tId = Convert.ToInt16(LBTrainersResult.SelectedValue.ToString());
-
+            ViewState["trainerId"] = tId;
             String connectionString = WebConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
             String sqlSelect = "SELECT tFees FROM Staff WHERE sId=" + tId + "";
             SqlConnection con = new SqlConnection(connectionString);
@@ -54,7 +55,7 @@ namespace GYMFIT
 
             LblSelectedTrainer.Text = ViewState["trainerName"].ToString();
             LblSelectedTrainerFees.Text = ViewState["trainerFees"].ToString();
-
+            BtnSelectTrainer.Attributes.Add("onclick", "window.open('TrainerPopup.aspx?Id=" + ViewState["trainerId"].ToString() +", '', 'height=400,width=400');");
         }
     }
 }

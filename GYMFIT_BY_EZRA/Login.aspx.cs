@@ -14,7 +14,6 @@ namespace GYMFIT
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
         protected void BtnLogin_Click(Object sender, EventArgs e)
         {
@@ -35,7 +34,13 @@ namespace GYMFIT
                 {
                     String tempPass = Convert.ToString(cmd.ExecuteScalar());
                     if (password.Equals(tempPass)) {
+                        sqlSelect = "SELECT cId FROM Customer WHERE cEmail='" + email + "'";
+                        cmd = new SqlCommand(sqlSelect, con);
+                        String cId = Convert.ToString(cmd.ExecuteScalar());
                         LblLoginStatus.Text = "Login Successful!<br /> We will redirect you to the Home page";
+                        con.Close();
+                        Response.Cookies["GYMFITLoggedIn"].Value = email;
+                        Response.Cookies["GYMFITLoggedInId"].Value = cId;
                         Response.AddHeader("REFRESH", "3;URL=Home.aspx");
                     }
                     else

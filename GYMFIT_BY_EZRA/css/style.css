@@ -16,7 +16,7 @@ a:focus{
   outline: none;
 }
 html{
-    background-color: #000;
+    background-color: #333;
 }
 body{
   background-color: transparent;
@@ -59,6 +59,28 @@ body{
         rgba(0, 0, 0, 0.0)),
         url(../img/gym_bkgd_bw-compressor.jpg); 
 }
+#AdminDashboard {
+    background-color: #ecf0f1;
+}
+.admin-nav{
+    background-color: #333 !important;
+    border-bottom: 1px solid #aeaeae;
+}
+#AdminDashboard th {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#AdminDashboard td {
+    font-family: 'Questrial', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+#AdminDashboard h2{
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 #FindTrainer{
     background: linear-gradient(
         rgba(0, 0, 0, 0.6),
@@ -72,9 +94,38 @@ body{
 }
 #VenueBooking .page-desc img{
     height: 80px;
+    width: 100%;
 }
 #VenueBooking .page-desc p{
     font-size: 24px;
+}
+#VenueBooking .page-desc .col-md-4{
+    padding-right: 0px;
+}
+#VenueBooking .default-form .col-md-8 {
+    padding-left: 15px;
+}
+#VenueBooking .default-form .col-md-8 {
+    padding-left: 15px;
+}
+#VenueBooking .default-form .col-md-8 {
+    padding-right: 15px;
+}
+#VenueBooking .default-form > .row {
+    margin-bottom: 10px;
+}
+#VenueBooking .default-form .col-md-6 > table{
+    background-color: #fff;
+}
+#VenueBooking .default-form textarea {
+    height: 110px;
+    width: 100%;
+}
+#VenueBooking .default-form .col-md-6 .col-md-5:first-child{
+    padding-right: 0px;
+}
+#VenueBooking .default-form .col-md-6 .col-md-5:last-child{
+    padding-left: 0px;
 }
 #Login .page-desc{
   margin-top: 20px;
