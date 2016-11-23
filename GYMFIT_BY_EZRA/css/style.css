@@ -75,6 +75,14 @@ body{
     font-family: 'Questrial', Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
+#MainContent_LblBookingResult,
+#MainContent_LblSelectTrainerResult,
+#MainContent_LblGetMembershipResult {
+    display: block !important;
+}
+#MainContent_LblGetMembershipResult {
+    color: #fff;
+}
 #AdminDashboard h2{
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
