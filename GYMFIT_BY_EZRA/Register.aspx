@@ -45,10 +45,10 @@
                         <asp:RequiredFieldValidator ID="RFVFirstName" ControlToValidate="TBFirstName" runat="server" ErrorMessage="Please Enter First Name"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RFVLastName" ControlToValidate="TBLastName" runat="server" ErrorMessage="Please Enter Last Name"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RFVPhoneNo" ControlToValidate="TBPhoneNo" runat="server" ErrorMessage="Please Enter Phone Number"></asp:RequiredFieldValidator>
-                        <asp:CompareValidator ID="CVCompare" ControlToValidate="TBPassword" ControlToCompare="TBConfirmPassword" runat="server" ErrorMessage="Password is not the same"></asp:CompareValidator>
-                        
-                        <asp:RegularExpressionValidator runat="server" id="REVFirstName" ControlToValidate="TBFirstName" ErrorMessage="Please enter a name." ValidationExpression="/^[A-z]+$/" />
-                        <asp:RegularExpressionValidator runat="server" id="REVLastName" ControlToValidate="TBLastName" ErrorMessage="please enter a name." ValidationExpression="/^[A-z]+$/" />
+                        <asp:CompareValidator ID="CVCompare" ControlToValidate="TBPassword" ControlToCompare="TBConfirmPassword" runat="server" ErrorMessage="Password do not match"></asp:CompareValidator>
+                        <asp:RegularExpressionValidator ID="validateEmail" runat="server" ErrorMessage="Invalid email." ControlToValidate="TBEmail" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" ></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator runat="server" id="REVFirstName" ControlToValidate="TBFirstName" ErrorMessage="Please enter a First Name." ValidationExpression="/^[A-z]+$/" />
+                        <asp:RegularExpressionValidator runat="server" id="REVLastName" ControlToValidate="TBLastName" ErrorMessage="Please enter a Last Name." ValidationExpression="/^[A-z]+$/" />
                         <asp:ValidationSummary ID="VSSummary" runat="server" ShowMessageBox="true" DisplayMode="SingleParagraph" HeaderText="The input is incorrect" ShowSummary="false" />
                     </div>
                 </div>
