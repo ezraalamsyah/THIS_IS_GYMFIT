@@ -12,8 +12,10 @@
                         <asp:TextBox id="TBPassword" TextMode="Password" placeholder="Password" runat="server"></asp:TextBox>
                         <asp:Button id="BtnLogin" runat="server" Text="LOG IN" OnClick="BtnLogin_Click" />
                         <asp:Label id="LblLoginStatus" runat="server"></asp:Label>
-                        <asp:RequiredFieldValidator ID="RFVEmail" ControlToValidate="TBEmail" runat="server" ErrorMessage="Please Enter Email"></asp:RequiredFieldValidator>
-                        <asp:RequiredFieldValidator ID="RFVPassword" ControlToValidate="TBPassword" runat="server" ErrorMessage="Please Enter Password"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVEmail" ControlToValidate="TBEmail" runat="server" 
+                            ErrorMessage="Please Enter Email"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVPassword" ControlToValidate="TBPassword" runat="server" 
+                            ErrorMessage="Please Enter Password"></asp:RequiredFieldValidator>
                     </div>  
                 </div>
                 <!-- 2ND HALF - LOGIN DESCRIPTION -->

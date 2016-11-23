@@ -48,10 +48,12 @@
                         <asp:RequiredFieldValidator ID="RFVPax" ControlToValidate="TBPax" runat="server" ErrorMessage="Please enter Number of People"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RFVStart" ControlToValidate="TBStartTime" runat="server" ErrorMessage="Please enter start time"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RFVend" ControlToValidate="TBEndTime" runat="server" ErrorMessage="Please enter end time"></asp:RequiredFieldValidator>
-                        <asp:RangeValidator ID="RVPax" ControlToValidate="TBPax" MinimumValue="1" MaximumValue="50" ErrorMessage="Please enter from 1-50" runat="server"></asp:RangeValidator>
+                        <asp:RangeValidator ID="RVPax" ControlToValidate="TBPax"
+                             MinimumValue="1" MaximumValue="50" ErrorMessage="Please enter from 1-50" 
+                            runat="server"></asp:RangeValidator>
                         <asp:RegularExpressionValidator runat="server" id="REVPax" ControlToValidate="TBPax" ErrorMessage="please enter a number." ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
-                        <asp:RegularExpressionValidator runat="server" id="REVStart" ControlToValidate="TBStartTime" ErrorMessage="please enter time in HH:MM." ValidationExpression="^(1[0-2]|0[1-9]):[0-5][0-9]\040(AM|am|PM|pm)$"></asp:RegularExpressionValidator>
-                        <asp:RegularExpressionValidator runat="server" id="REVEnd" ControlToValidate="TBEndTime" ErrorMessage="please enter time in HH:MM." ValidationExpression="^(1[0-2]|0[1-9]):[0-5][0-9]\040(AM|am|PM|pm)$"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator runat="server" id="REVStart" ControlToValidate="TBStartTime" ErrorMessage="please enter time in HH:MM." ValidationExpression="^(?:[01][0-9]|2[0-3]):[0-5][0-9]$"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator runat="server" id="REVEnd" ControlToValidate="TBEndTime" ErrorMessage="please enter time in HH:MM." ValidationExpression="^(?:[01][0-9]|2[0-3]):[0-5][0-9]$"></asp:RegularExpressionValidator>
                     </div>  
                 </div>
                 <div class="col-md-6 page-desc">
