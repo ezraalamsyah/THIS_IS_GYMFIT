@@ -16,13 +16,18 @@ namespace GYMFIT_BY_EZRA
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack) {
-                retrieveVenueBookings();
-            }
-
         }
-        protected void retrieveVenueBookings() {
 
+        protected void BtnVenueBookings_Click(object sender, EventArgs e) {
+            MVAdminDashboard.ActiveViewIndex = 0;
+        }
+        protected void BtnManageUsers_Click(object sender, EventArgs e)
+        {
+            MVAdminDashboard.ActiveViewIndex = 1;
+        }
+        protected void BtnManageStaffs_Click(object sender, EventArgs e)
+        {
+            MVAdminDashboard.ActiveViewIndex = 2;
         }
     }
 }

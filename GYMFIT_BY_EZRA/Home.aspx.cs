@@ -10,13 +10,31 @@ using System.Text;
 
 namespace GYMFIT
 {
-    public partial class homeUser : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.QueryString["membership"] == "true") {
                 PanelServices.Visible = true;
+                PanelMembershipPlans.Visible = false;
             }
+            else
+            {
+                PanelServices.Visible = false;
+                PanelMembershipPlans.Visible = true;
+            }
+        }
+        protected void BtnDailyPlanView_Click(object sender, EventArgs e)
+        {
+            MVMembershipPlan.ActiveViewIndex = 0;
+        }
+        protected void BtnMonthlyPlanView_Click(object sender, EventArgs e)
+        {
+            MVMembershipPlan.ActiveViewIndex = 1;
+        }
+        protected void BtnAnnualPlanView_Click(object sender, EventArgs e)
+        {
+            MVMembershipPlan.ActiveViewIndex = 2;
         }
 
         protected void BtnGetMembership_Click(object sender, EventArgs e) {
@@ -38,7 +56,6 @@ namespace GYMFIT
 
         private void UpdateMembership(String plan) {
             String email = Request.Cookies["GYMFITLoggedIn"].Value;
-            LblGetMembershipResult.Text = email;
             String connectionString = WebConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
             String sqlSelect = "SELECT COUNT(*) FROM Customer WHERE cEmail='" + email + "'";
             SqlConnection con = new SqlConnection(connectionString);
@@ -67,6 +84,10 @@ namespace GYMFIT
                 {
                     LblGetMembershipResult.Text = oError.ToString();
                 }
+            }
+            else
+            {
+                LblGetMembershipResult.Text = "User does not exist!";
             }
             con.Close();
         }

@@ -10,7 +10,7 @@
 namespace GYMFIT {
     
     
-    public partial class homeUser {
+    public partial class Home {
         
         /// <summary>
         /// BtnGetMembership control.
@@ -38,6 +38,33 @@ namespace GYMFIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelMembershipPlans;
+        
+        /// <summary>
+        /// BtnDailyPlanView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnDailyPlanView;
+        
+        /// <summary>
+        /// BtnMonthlyPlanView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnMonthlyPlanView;
+        
+        /// <summary>
+        /// BtnAnnualPlanView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnAnnualPlanView;
         
         /// <summary>
         /// MVMembershipPlan control.

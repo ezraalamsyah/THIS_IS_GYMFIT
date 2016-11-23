@@ -2,7 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div id="AdminDashboard" class="admin-page page-content">
         <div class="container">
-            <asp:MultiView ID="MVAdminDashboard" runat="server">
+            <asp:Button ID="BtnVenueBookings" Text="Venue Bookings" OnClick="BtnVenueBookings_Click" runat="server" />
+            <asp:Button ID="BtnManageUsers" Text="Manage Users" OnClick="BtnManageUsers_Click" runat="server" />
+            <asp:Button ID="BtnManageStaffs" Text="Manage Staffs" OnClick="BtnManageStaffs_Click" runat="server" />
+
+            <asp:MultiView ID="MVAdminDashboard" runat="server" ActiveViewIndex="0">
                 <asp:View ID="ViewVenueBookings" runat="server">
                     <h2>All Bookings</h2>
                     <asp:GridView ID="GVVenueBookings" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="vbId" DataSourceID="SqlDataSourceVenueBookings" PageSize="5">

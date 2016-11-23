@@ -20,7 +20,7 @@
                 <asp:HyperLink ID="HomePageLink" runat="server">
                     <asp:Image ID="Logo" CssClass="logo" runat="server" ImageUrl="~/img/gym-fit-logo-dark.png" />
                 </asp:HyperLink>
-                <h2>Admin Dashboard</h2>
+                <h2 style="color: #fff; display: inline-block; vertical-align: top; margin: 0px 30px;">Admin Dashboard</h2>
             </div>
         </div>
         <asp:ContentPlaceHolder ID="MainContent" runat="server">

@@ -13,6 +13,33 @@ namespace GYMFIT_BY_EZRA {
     public partial class AdminDashboard {
         
         /// <summary>
+        /// BtnVenueBookings control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnVenueBookings;
+        
+        /// <summary>
+        /// BtnManageUsers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnManageUsers;
+        
+        /// <summary>
+        /// BtnManageStaffs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnManageStaffs;
+        
+        /// <summary>
         /// MVAdminDashboard control.
         /// </summary>
         /// <remarks>

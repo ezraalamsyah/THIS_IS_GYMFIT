@@ -104,6 +104,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Sign-out.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Admin.Master" />
     <None Include="Web.Debug.config">
@@ -118,7 +119,6 @@
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="FindTrainer.aspx" />
-    <Content Include="Testing.aspx" />
     <Content Include="TrainerPopup.aspx" />
     <Content Include="userProfile.aspx" />
     <Content Include="Book-A-Venue.aspx" />
@@ -162,6 +162,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sign-out.aspx.cs">
+      <DependentUpon>Sign-out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sign-out.aspx.designer.cs">
+      <DependentUpon>Sign-out.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,13 +182,6 @@
     </Compile>
     <Compile Include="FindTrainer.aspx.designer.cs">
       <DependentUpon>FindTrainer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Testing.aspx.cs">
-      <DependentUpon>Testing.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Testing.aspx.designer.cs">
-      <DependentUpon>Testing.aspx</DependentUpon>
     </Compile>
     <Compile Include="TrainerPopup.aspx.cs">
       <DependentUpon>TrainerPopup.aspx</DependentUpon>
