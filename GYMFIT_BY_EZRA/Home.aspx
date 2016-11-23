@@ -10,11 +10,12 @@
                     <asp:Label ID="LblGetMembershipResult" runat="server"></asp:Label>
                 </div>
                 <div class="col-md-6 services-desc">
-                    <asp:Panel ID="PanelMembershipPlans" runat="server">
+                    <asp:Panel ID="PanelMembershipPlansButtons" runat="server">
                         <asp:Button ID="BtnDailyPlanView" Text="Daily Plan" OnClick="BtnDailyPlanView_Click" runat="server" />
                         <asp:Button ID="BtnMonthlyPlanView" Text="Monthly Plan" OnClick="BtnMonthlyPlanView_Click" runat="server" />
                         <asp:Button ID="BtnAnnualPlanView" Text="Annual Plan" OnClick="BtnAnnualPlanView_Click" runat="server" />
-
+                    </asp:Panel>
+                    <asp:Panel ID="PanelMembershipPlans" runat="server">
                         <asp:MultiView ID="MVMembershipPlan" runat="server" ActiveViewIndex="0">
                             <asp:View runat="server">
                                 <h2>Daily Plan</h2>

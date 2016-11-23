@@ -19,6 +19,10 @@ namespace GYMFIT
                 Response.Cookies["GYMFITLoggedInId"].Value = null;
                 Response.Cookies["GYMFITLoggedIn"].Expires = System.DateTime.Now.AddDays(1);
                 Response.Cookies["GYMFITLoggedInId"].Expires = System.DateTime.Now.AddDays(1);
+
+                printUserNavbar(currentUrl);
+
+                Response.AddHeader("REFRESH", "0.5;URL=Register.aspx?redirect=1");
             }
             else
             {
@@ -36,67 +40,78 @@ namespace GYMFIT
                 }
                 if (Request.Cookies["GYMFITLoggedIn"].Value != "")
                 {
-                    if (Request.QueryString["membership"] == "true" || checkMembership(Request.Cookies["GYMFITLoggedIn"].Value))
+                    if (Request.QueryString["membership"] == "true" && checkMembership(Request.Cookies["GYMFITLoggedIn"].Value))
                     {
-                        LiteralNavigation.Text = "<ul>";
-                        if (currentUrl.ToLower().Contains("home.aspx"))
-                            LiteralNavigation.Text += "<li><a class='menu-item active' href='Home.aspx?membership=true'>Home</a></li>";
-                        else
-                            LiteralNavigation.Text += "<li><a class='menu-item' href='Home.aspx?membership=true'>Home</a></li>";
-                        if (currentUrl.ToLower().Contains("book-a-venue.aspx"))
-                            LiteralNavigation.Text += "<li><a class='menu-item active' href='Book-A-Venue.aspx?membership=true'>Venue</a></li>";
-                        else
-                            LiteralNavigation.Text += "<li><a class='menu-item' href='Book-A-Venue.aspx?membership=true'>Venue</a></li>";
-                        if (currentUrl.ToLower().Contains("findtrainer.aspx"))
-                            LiteralNavigation.Text += "<li><a class='menu-item active' href='FindTrainer.aspx?membership=true'>Trainer</a></li>";
-                        else
-                            LiteralNavigation.Text += "<li><a class='menu-item' href='FindTrainer.aspx?membership=true'>Trainer</a></li>";
-                        if (currentUrl.ToLower().Contains("profile.aspx"))
-                            LiteralNavigation.Text += "<li><a class='menu-item active' href='Profile.aspx?membership=true'>Profile</a></li>";
-                        else
-                            LiteralNavigation.Text += "<li><a class='menu-item' href='FindTrainer.aspx?membership=true'>Profile</a></li>";
-                        if (currentUrl.ToLower().Contains("sign-out.aspx"))
-                            LiteralNavigation.Text += "<li><a class='menu-item active' href='Sign-out.aspx'>Sign out</a></li>";
-                        else
-                            LiteralNavigation.Text += "<li><a class='menu-item' href='Sign-out.aspx?membership=true'>Sign out</a></li>";
-                        LiteralNavigation.Text += "</ul>";
+                        printMemberNavbar(currentUrl);
                     }
                     else
                     {
-                        LiteralNavigation.Text = "<ul>";
-                        if (currentUrl.ToLower().Contains("home.aspx"))
-                            LiteralNavigation.Text += "<li><a class='menu-item active' href='Home.aspx?membership=true'>Home</a></li>";
-                        else
-                            LiteralNavigation.Text += "<li><a class='menu-item' href='Home.aspx?membership=true'>Home</a></li>";
-                        if (currentUrl.ToLower().Contains("profile.aspx"))
-                            LiteralNavigation.Text += "<li><a class='menu-item active' href='Profile.aspx?membership=true'>Profile</a></li>";
-                        else
-                            LiteralNavigation.Text += "<li><a class='menu-item' href='FindTrainer.aspx?membership=true'>Profile</a></li>";
-                        if (currentUrl.ToLower().Contains("sign-out.aspx"))
-                            LiteralNavigation.Text += "<li><a class='menu-item active' href='Sign-out.aspx'>Sign out</a></li>";
-                        else
-                            LiteralNavigation.Text += "<li><a class='menu-item' href='Sign-out.aspx?membership=true'>Sign out</a></li>";
-                        LiteralNavigation.Text += "</ul>";
+                        printUserNavbar(currentUrl);
                     }
 
                 }
                 else
                 {
-                    LiteralNavigation.Text = "<ul>";
-                    if (currentUrl.ToLower().Contains("register.aspx"))
-                        LiteralNavigation.Text += "<li><a class='menu-item active' href='Register.aspx?redirect=1'>Register</a></li>";
-                    else
-                        LiteralNavigation.Text += "<li><a class='menu-item' href='Register.aspx?redirect=1'>Register</a></li>";
-                    if (currentUrl.ToLower().Contains("login.aspx"))
-                        LiteralNavigation.Text += "<li><a class='menu-item active' href='Login.aspx?redirect=1'>Login</a></li>";
-                    else
-                        LiteralNavigation.Text += "<li><a class='menu-item' href='Login.aspx?redirect=1'>Login</a></li>";
-                    LiteralNavigation.Text += "</ul>";
+                    printRegisterNavbar(currentUrl);
                 }
 
             }
         }
 
+        private void printRegisterNavbar(String currentUrl) {
+            LiteralNavigation.Text = "<ul>";
+            if (currentUrl.ToLower().Contains("register.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Register.aspx?redirect=1'>Register</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Register.aspx?redirect=1'>Register</a></li>";
+            if (currentUrl.ToLower().Contains("login.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Login.aspx?redirect=1'>Login</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Login.aspx?redirect=1'>Login</a></li>";
+            LiteralNavigation.Text += "</ul>";
+        }
+        private void printUserNavbar(String currentUrl)
+        {
+            LiteralNavigation.Text = "<ul>";
+            if (currentUrl.ToLower().Contains("home.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Home.aspx'>Home</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Home.aspx'>Home</a></li>";
+            if (currentUrl.ToLower().Contains("profile.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Profile.aspx'>Profile</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Profile.aspx'>Profile</a></li>";
+            if (currentUrl.ToLower().Contains("sign-out.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Sign-out.aspx'>Sign out</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Sign-out.aspx'>Sign out</a></li>";
+            LiteralNavigation.Text += "</ul>";
+        }
+        private void printMemberNavbar(String currentUrl)
+        {
+            LiteralNavigation.Text = "<ul>";
+            if (currentUrl.ToLower().Contains("home.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Home.aspx?membership=true'>Home</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Home.aspx?membership=true'>Home</a></li>";
+            if (currentUrl.ToLower().Contains("book-a-venue.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Book-A-Venue.aspx?membership=true'>Venue</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Book-A-Venue.aspx?membership=true'>Venue</a></li>";
+            if (currentUrl.ToLower().Contains("findtrainer.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='FindTrainer.aspx?membership=true'>Trainer</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='FindTrainer.aspx?membership=true'>Trainer</a></li>";
+            if (currentUrl.ToLower().Contains("profile.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Profile.aspx?membership=true'>Profile</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Profile.aspx?membership=true'>Profile</a></li>";
+            if (currentUrl.ToLower().Contains("sign-out.aspx"))
+                LiteralNavigation.Text += "<li><a class='menu-item active' href='Sign-out.aspx'>Sign out</a></li>";
+            else
+                LiteralNavigation.Text += "<li><a class='menu-item' href='Sign-out.aspx?membership=true'>Sign out</a></li>";
+            LiteralNavigation.Text += "</ul>";
+        }
         private bool checkMembership(String email) {
 
             String connectionString = WebConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
@@ -113,7 +128,7 @@ namespace GYMFIT
                 try
                 {
                     String memberType = Convert.ToString(cmd.ExecuteScalar());
-                    if (memberType == null) {
+                    if (memberType == null || memberType == "") {
                         con.Close();
                         return false;
                     }

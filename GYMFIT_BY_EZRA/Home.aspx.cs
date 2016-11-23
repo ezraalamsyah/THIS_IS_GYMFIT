@@ -17,11 +17,13 @@ namespace GYMFIT
             if (Request.QueryString["membership"] == "true") {
                 PanelServices.Visible = true;
                 PanelMembershipPlans.Visible = false;
+                PanelMembershipPlansButtons.Visible = false;
             }
             else
             {
                 PanelServices.Visible = false;
                 PanelMembershipPlans.Visible = true;
+                PanelMembershipPlansButtons.Visible = true;
             }
         }
         protected void BtnDailyPlanView_Click(object sender, EventArgs e)
@@ -40,6 +42,7 @@ namespace GYMFIT
         protected void BtnGetMembership_Click(object sender, EventArgs e) {
             PanelServices.Visible = false;
             PanelMembershipPlans.Visible = true;
+            PanelMembershipPlansButtons.Visible = true;
         }
         protected void BtnDailyPlan_Click(object sender, EventArgs e)
         {

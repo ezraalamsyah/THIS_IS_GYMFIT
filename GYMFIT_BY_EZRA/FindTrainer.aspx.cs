@@ -26,9 +26,10 @@ namespace GYMFIT
 
         protected void BtnSelectTrainer_Click(object sender, EventArgs e)
         {
-            String Trainer = DDLTrainerType.SelectedItem.Text;
-            String Budget = TBBudget.Text;
-            String Results = LBTrainersResult.SelectedItem.Text;
+            if (ViewState["trainerId"].ToString() != null || ViewState["trainerId"].ToString() != "") {
+                LblSelectTrainerResult.Text = "Successful! <br />We will redirect you to the trainer information page";
+                Response.AddHeader("REFRESH", "1;URL=TrainerInfo.aspx?membership=true&Id=" + ViewState["trainerId"].ToString());
+            }
         }
 
         protected void LBTrainersResult_SelectedIndexChanged(object sender, EventArgs e)
@@ -36,9 +37,9 @@ namespace GYMFIT
             String tName = LBTrainersResult.SelectedItem.ToString();
             ViewState["trainerName"] = tName;
             int tId = Convert.ToInt16(LBTrainersResult.SelectedValue.ToString());
-            ViewState["trainerId"] = tId;
+            ViewState["trainerId"] = LBTrainersResult.SelectedValue.ToString();
             String connectionString = WebConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-            String sqlSelect = "SELECT tFees FROM Staff WHERE sId=" + tId + "";
+            String sqlSelect = "SELECT tFees FROM Staff WHERE sId=" + tId;
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
             SqlCommand cmd = new SqlCommand(sqlSelect, con);
@@ -54,8 +55,7 @@ namespace GYMFIT
             con.Close();
 
             LblSelectedTrainer.Text = ViewState["trainerName"].ToString();
-            LblSelectedTrainerFees.Text = ViewState["trainerFees"].ToString();
-            BtnSelectTrainer.Attributes.Add("onclick", "window.open('TrainerPopup.aspx?Id=" + ViewState["trainerId"].ToString() +", '', 'height=400,width=400');");
+            LblSelectedTrainerFees.Text = "RM " + ViewState["trainerFees"].ToString();
         }
     }
 }

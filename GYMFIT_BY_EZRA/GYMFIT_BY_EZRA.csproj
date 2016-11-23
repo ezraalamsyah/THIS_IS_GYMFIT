@@ -119,7 +119,7 @@
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="FindTrainer.aspx" />
-    <Content Include="TrainerPopup.aspx" />
+    <Content Include="TrainerInfo.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Book-A-Venue.aspx" />
     <Content Include="Web.config" />
@@ -183,12 +183,12 @@
     <Compile Include="FindTrainer.aspx.designer.cs">
       <DependentUpon>FindTrainer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TrainerPopup.aspx.cs">
-      <DependentUpon>TrainerPopup.aspx</DependentUpon>
+    <Compile Include="TrainerInfo.aspx.cs">
+      <DependentUpon>TrainerInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TrainerPopup.aspx.designer.cs">
-      <DependentUpon>TrainerPopup.aspx</DependentUpon>
+    <Compile Include="TrainerInfo.aspx.designer.cs">
+      <DependentUpon>TrainerInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>

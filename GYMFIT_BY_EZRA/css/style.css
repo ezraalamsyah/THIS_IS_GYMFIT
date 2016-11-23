@@ -68,7 +68,7 @@ body{
 }
 #AdminDashboard th {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 18px;
 }
 #AdminDashboard td {
@@ -81,11 +81,38 @@ body{
     font-size: 28px;
     margin-bottom: 10px;
 }
+#AdminDashboard > .container > input {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+}
 #FindTrainer{
     background: linear-gradient(
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)),
         url(../img/home_img-compressor.jpg); 
+}
+#MainContent_AdRotator1 {
+    text-align: center !important;
+    margin: auto;
+    display: block;
+    margin-top:30px;
+}
+#MainContent_AdRotator1 img {
+    height: 200px;
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+#MainContent_LiteralTrainerResult tr td:last-child{
+    display: block;
+    margin-left: 15px;
+}
+.trainer-info h2,
+.trainer-info span{
+    color: #fff;
+    display: block;
 }
 #FindTrainer p,
 #VenueBooking p{
@@ -324,6 +351,61 @@ input[type="submit"].default-btn,
     text-align: left;
     float: left;
     margin-bottom: 10px;
+}
+#MainContent_PanelMembershipPlansButtons {
+    text-align: center;
+    width: 100%;
+}
+.default-form span{
+    display: none;
+}
+#MainContent_LblLoginStatus,
+#MainContent_LblRegisterStatus {
+    display: block !important;
+}
+#MainContent_PanelMembershipPlansButtons input,
+#MainContent_PanelMembershipPlans input {
+    background-color: #ed1c24;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 0px;
+    width: 30%;
+}
+#MainContent_FormView1 a{
+    display: inline-block;
+    background-color: #ed1c24;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 30px;
+
+}
+#MainContent_FormView1 a:last-child {
+    display: none;
+}
+#MainContent_FormView1 td{
+    color: #aaa;
+}
+#MainContent_FormView1 span {
+    color: #fff;
+}
+#MainContent_PanelMembershipPlans {
+    background-color: #eee;
+    border: 1px solid #666;
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    padding: 30px;
+}
+#MainContent_PanelMembershipPlans h2{
+    color: #333;
+}
+#MainContent_PanelMembershipPlans p{
+    color: #333;
+}
+.selected-trainer span{
+    display: block !important;
 }
 .selected-trainer span:last-child {
     float: right;

@@ -31,13 +31,13 @@ namespace GYMFIT {
         protected global::System.Web.UI.WebControls.Label LblGetMembershipResult;
         
         /// <summary>
-        /// PanelMembershipPlans control.
+        /// PanelMembershipPlansButtons control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelMembershipPlans;
+        protected global::System.Web.UI.WebControls.Panel PanelMembershipPlansButtons;
         
         /// <summary>
         /// BtnDailyPlanView control.
@@ -65,6 +65,15 @@ namespace GYMFIT {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnAnnualPlanView;
+        
+        /// <summary>
+        /// PanelMembershipPlans control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelMembershipPlans;
         
         /// <summary>
         /// MVMembershipPlan control.

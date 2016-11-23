@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Advertisements>
   <Ad>
-    <ImageUrl>rose1.jpg</ImageUrl>
-    <NavigateUrl>http://www.1800flowers.com</NavigateUrl>
+    <ImageUrl>~/img/SignUp.jpg</ImageUrl>
+    <NavigateUrl>~/Register.aspx</NavigateUrl>
     <AlternateText>
-      Order flowers, roses, gifts and more
+      Sign Up with Us Now
     </AlternateText>
     <Impressions>20</Impressions>
-    <Keyword>flowers</Keyword>
+    <Keyword>SignUp</Keyword>
   </Ad>
 
   <Ad>
-    <ImageUrl>rose2.jpg</ImageUrl>
-    <NavigateUrl>http://www.babybouquets.com.au</NavigateUrl>
-    <AlternateText>Order roses and flowers</AlternateText>
+    <ImageUrl>~/img/BookTrainer.jpg</ImageUrl>
+    <NavigateUrl>~/FindTrainer.aspx</NavigateUrl>
+    <AlternateText>Find a Trainer</AlternateText>
     <Impressions>20</Impressions>
-    <Keyword>gifts</Keyword>
+    <Keyword>FindTrainer</Keyword>
   </Ad>
 
   <Ad>
-    <ImageUrl>rose3.jpg</ImageUrl>
-    <NavigateUrl>http://www.flowers2moscow.com</NavigateUrl>
-    <AlternateText>Send flowers to Russia</AlternateText>
+    <ImageUrl>~/img/Free1Day.jpg</ImageUrl>
+    <NavigateUrl>~/Home.aspx</NavigateUrl>
+    <AlternateText>Free 1 day trial</AlternateText>
     <Impressions>20</Impressions>
-    <Keyword>russia</Keyword>
+    <Keyword>Free</Keyword>
   </Ad>
 
   <Ad>
-    <ImageUrl>rose4.jpg</ImageUrl>
-    <NavigateUrl>http://www.edibleblooms.com</NavigateUrl>
-    <AlternateText>Edible Blooms</AlternateText>
+    <ImageUrl>~/img/BringFree.jpg</ImageUrl>
+    <NavigateUrl>~/Home.aspx</NavigateUrl>
+    <AlternateText>Bring 1 friend for free</AlternateText>
     <Impressions>20</Impressions>
-    <Keyword>gifts</Keyword>
+    <Keyword>Bring</Keyword>
   </Ad>
 </Advertisements>

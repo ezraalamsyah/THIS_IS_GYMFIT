@@ -41,7 +41,7 @@ namespace GYMFIT
                         con.Close();
                         Response.Cookies["GYMFITLoggedIn"].Value = email;
                         Response.Cookies["GYMFITLoggedInId"].Value = cId;
-                        Response.AddHeader("REFRESH", "3;URL=Home.aspx");
+                        Response.AddHeader("REFRESH", "1;URL=Home.aspx");
                     }
                     else
                     {

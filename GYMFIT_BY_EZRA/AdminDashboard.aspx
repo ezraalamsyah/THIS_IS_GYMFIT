@@ -18,7 +18,7 @@
                             <asp:BoundField DataField="purpose" HeaderText="Purpose" SortExpression="purpose" />
                             <asp:BoundField DataField="vType" HeaderText="Venue Type" SortExpression="vType" />
                             <asp:BoundField DataField="pax" HeaderText="Pax" SortExpression="pax" />
-                            <asp:BoundField DataField="vId" HeaderText="VenueID" SortExpression="vId" />
+                            <asp:BoundField DataField="vId" HeaderText="Venue ID" SortExpression="vId" />
                             <asp:CommandField ButtonType="Button" HeaderText="Approve" ShowEditButton="True" ShowHeader="True" />
                         </Columns>
                     </asp:GridView>
@@ -58,15 +58,17 @@
                 </asp:View>
                 <asp:View ID="ViewManageUsers" runat="server">
                     <h2>Customers</h2>
-                    <asp:GridView ID="GVCustomers" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="cId" DataSourceID="SqlDataSourceCustomers" PageSize="5">
+                    <asp:GridView ID="GVCustomers" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="cId" DataSourceID="SqlDataSourceCustomers" PageSize="5" AllowSorting="True">
                         <Columns>
-                            <asp:BoundField DataField="cId" HeaderText="cId" InsertVisible="False" ReadOnly="True" SortExpression="cId" />
-                            <asp:BoundField DataField="cName" HeaderText="cName" SortExpression="cName" />
-                            <asp:CheckBoxField DataField="cGender" HeaderText="cGender" SortExpression="cGender" />
-                            <asp:BoundField DataField="cEmail" HeaderText="cEmail" SortExpression="cEmail" />
-                            <asp:BoundField DataField="memberType" HeaderText="memberType" SortExpression="memberType" />
-                            <asp:BoundField DataField="cPhoneNo" HeaderText="cPhoneNo" SortExpression="cPhoneNo" />
-                            <asp:BoundField DataField="cAddress" HeaderText="cAddress" SortExpression="cAddress" />
+                            <asp:BoundField DataField="cId" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="cId" />
+                            <asp:BoundField DataField="cName" HeaderText="Name" SortExpression="cName" />
+                            <asp:CheckBoxField DataField="cGender" HeaderText="Gender" SortExpression="cGender" />
+                            <asp:BoundField DataField="cEmail" HeaderText="Email" SortExpression="cEmail" />
+                            <asp:BoundField DataField="memberType" HeaderText="Member Type" SortExpression="memberType" />
+                            <asp:BoundField DataField="cPhoneNo" HeaderText="Phone Number" SortExpression="cPhoneNo" />
+                            <asp:BoundField DataField="cAddress" HeaderText="Address" SortExpression="cAddress" />
+                            <asp:CommandField ButtonType="Button" HeaderText="Update" ShowEditButton="True" ShowHeader="True" />
+                            <asp:CommandField ButtonType="Button" HeaderText="Remove" ShowDeleteButton="True" ShowHeader="True" />
                         </Columns>
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSourceCustomers" runat="server" ConnectionString="<%$ ConnectionStrings:DatabaseConnectionString %>" SelectCommand="SELECT [cId], [cName], [cGender], [cEmail], [memberType], [cPhoneNo], [cAddress] FROM [Customer] ORDER BY [cId]" DeleteCommand="DELETE FROM [Customer] WHERE [cId] = @cId" InsertCommand="INSERT INTO [Customer] ([cName], [cGender], [cEmail], [memberType], [cPhoneNo], [cAddress]) VALUES (@cName, @cGender, @cEmail, @memberType, @cPhoneNo, @cAddress)" UpdateCommand="UPDATE [Customer] SET [cName] = @cName, [cGender] = @cGender, [cEmail] = @cEmail, [memberType] = @memberType, [cPhoneNo] = @cPhoneNo, [cAddress] = @cAddress WHERE [cId] = @cId">
@@ -94,16 +96,18 @@
                 </asp:View>
                 <asp:View ID="ViewManageStaffs" runat="server">
                     <h2>Staffs</h2>
-                    <asp:GridView ID="GVStaffs" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="sId" DataSourceID="SqlDataSourceStaffs" PageSize="5">
+                    <asp:GridView ID="GVStaffs" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="sId" DataSourceID="SqlDataSourceStaffs" PageSize="5" AllowSorting="True">
                         <Columns>
-                            <asp:BoundField DataField="sId" HeaderText="sId" InsertVisible="False" ReadOnly="True" SortExpression="sId" />
-                            <asp:BoundField DataField="sName" HeaderText="sName" SortExpression="sName" />
-                            <asp:BoundField DataField="sEmail" HeaderText="sEmail" SortExpression="sEmail" />
-                            <asp:BoundField DataField="sPhoneNo" HeaderText="sPhoneNo" SortExpression="sPhoneNo" />
-                            <asp:BoundField DataField="sType" HeaderText="sType" SortExpression="sType" />
-                            <asp:BoundField DataField="basicSalary" HeaderText="basicSalary" SortExpression="basicSalary" />
-                            <asp:BoundField DataField="tFees" HeaderText="tFees" SortExpression="tFees" />
-                            <asp:BoundField DataField="tType" HeaderText="tType" SortExpression="tType" />
+                            <asp:BoundField DataField="sId" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="sId" />
+                            <asp:BoundField DataField="sName" HeaderText="Name" SortExpression="sName" />
+                            <asp:BoundField DataField="sEmail" HeaderText="Email" SortExpression="sEmail" />
+                            <asp:BoundField DataField="sPhoneNo" HeaderText="Phone Number" SortExpression="sPhoneNo" />
+                            <asp:BoundField DataField="sType" HeaderText="Staff Type" SortExpression="sType" />
+                            <asp:BoundField DataField="basicSalary" HeaderText="Salary" SortExpression="basicSalary" />
+                            <asp:BoundField DataField="tType" HeaderText="Trainer Type" SortExpression="tType" />
+                            <asp:BoundField DataField="tFees" HeaderText="Trainer Fees" SortExpression="tFees" />
+                            <asp:CommandField ButtonType="Button" HeaderText="Update" ShowEditButton="True" ShowHeader="True" />
+                            <asp:CommandField ButtonType="Button" HeaderText="Remove" ShowDeleteButton="True" ShowHeader="True" />
                         </Columns>
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSourceStaffs" runat="server" ConnectionString="<%$ ConnectionStrings:DatabaseConnectionString %>" SelectCommand="SELECT [sId], [sName], [sEmail], [sPhoneNo], [sType], [basicSalary], [tFees], [tType] FROM [Staff] ORDER BY [sId]" DeleteCommand="DELETE FROM [Staff] WHERE [sId] = @sId" InsertCommand="INSERT INTO [Staff] ([sName], [sEmail], [sPhoneNo], [sType], [basicSalary], [tFees], [tType]) VALUES (@sName, @sEmail, @sPhoneNo, @sType, @basicSalary, @tFees, @tType)" UpdateCommand="UPDATE [Staff] SET [sName] = @sName, [sEmail] = @sEmail, [sPhoneNo] = @sPhoneNo, [sType] = @sType, [basicSalary] = @basicSalary, [tFees] = @tFees, [tType] = @tType WHERE [sId] = @sId">

@@ -39,8 +39,8 @@
                                 <asp:Label ID="LblSelectedTrainerFees" runat="server">Fees</asp:Label>
                             </div>
                         </div>
-                        <asp:Button id="BtnSelectTrainer" Text="Select Trainer"  runat="server" />
-
+                        <asp:Button id="BtnSelectTrainer" Text="Select Trainer" OnClick="BtnSelectTrainer_Click" runat="server" />
+                        <asp:Label ID="LblSelectTrainerResult" runat="server"></asp:Label>
                     </div>  
                 </div>
                 <div class="col-md-6 page-desc">
