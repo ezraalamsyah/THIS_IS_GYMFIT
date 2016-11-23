@@ -40,6 +40,7 @@
                             </div>
                         </div>
                         <asp:Button id="BtnSelectTrainer" Text="Select Trainer"  runat="server" />
+
                     </div>  
                 </div>
                 <div class="col-md-6 page-desc">

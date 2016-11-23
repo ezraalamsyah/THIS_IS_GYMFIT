@@ -85,6 +85,69 @@ namespace GYMFIT {
         protected global::System.Web.UI.WebControls.Label LblBookingResult;
         
         /// <summary>
+        /// RFVPax control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPax;
+        
+        /// <summary>
+        /// RFVStart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVStart;
+        
+        /// <summary>
+        /// RFVend control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVend;
+        
+        /// <summary>
+        /// RVPax control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RVPax;
+        
+        /// <summary>
+        /// REVPax control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVPax;
+        
+        /// <summary>
+        /// REVStart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVStart;
+        
+        /// <summary>
+        /// REVEnd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVEnd;
+        
+        /// <summary>
         /// ImgYoga control.
         /// </summary>
         /// <remarks>

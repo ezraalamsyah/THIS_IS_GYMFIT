@@ -148,15 +148,6 @@ namespace GYMFIT {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVLastName;
         
         /// <summary>
-        /// RFVGender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVGender;
-        
-        /// <summary>
         /// RFVPhoneNo control.
         /// </summary>
         /// <remarks>
@@ -166,12 +157,39 @@ namespace GYMFIT {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPhoneNo;
         
         /// <summary>
-        /// RFVAddress control.
+        /// CVCompare control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVAddress;
+        protected global::System.Web.UI.WebControls.CompareValidator CVCompare;
+        
+        /// <summary>
+        /// REVFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVFirstName;
+        
+        /// <summary>
+        /// REVLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVLastName;
+        
+        /// <summary>
+        /// VSSummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary VSSummary;
     }
 }

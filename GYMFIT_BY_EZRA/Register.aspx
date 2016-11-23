@@ -39,14 +39,17 @@
                         <asp:TextBox id="TBAddress" placeholder="Address" runat="server"></asp:TextBox>
                         <asp:Button id="BtnRegister" runat="server" Text="REGISTER" OnClick="BtnRegister_Click" />
                         <asp:Label ID="LblRegisterStatus" runat="server"></asp:Label>
-                        <asp:RequiredFieldValidator ID="RFVEmail" ControlToValidate="TBEmail" runat="server" ErrorMessage="Please Enter Email"></asp:RequiredFieldValidator>
-                        <asp:RequiredFieldValidator ID="RFVPassword" ControlToValidate="TBPassword" runat="server" ErrorMessage="Please Enter Password"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVEmail" ControlToValidate="TBEmail" runat="server" ErrorMessage="Please enter Email"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RFVPassword" ControlToValidate="TBPassword" runat="server" ErrorMessage="Please enter Password"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RFVConfirmPassword" ControlToValidate="TBConfirmPassword" runat="server" ErrorMessage="Please Enter Confirm Password"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RFVFirstName" ControlToValidate="TBFirstName" runat="server" ErrorMessage="Please Enter First Name"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RFVLastName" ControlToValidate="TBLastName" runat="server" ErrorMessage="Please Enter Last Name"></asp:RequiredFieldValidator>
-                        <asp:RequiredFieldValidator ID="RFVGender" ControlToValidate="DDLGender" runat="server" ErrorMessage="Please Pick Gender"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RFVPhoneNo" ControlToValidate="TBPhoneNo" runat="server" ErrorMessage="Please Enter Phone Number"></asp:RequiredFieldValidator>
-                        <asp:RequiredFieldValidator ID="RFVAddress" ControlToValidate="TBAddress" runat="server" ErrorMessage="Please Enter Address"></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CVCompare" ControlToValidate="TBPassword" ControlToCompare="TBConfirmPassword" runat="server" ErrorMessage="Password is not the same"></asp:CompareValidator>
+                        
+                        <asp:RegularExpressionValidator runat="server" id="REVFirstName" ControlToValidate="TBFirstName" ErrorMessage="Please enter a name." ValidationExpression="/^[A-z]+$/" />
+                        <asp:RegularExpressionValidator runat="server" id="REVLastName" ControlToValidate="TBLastName" ErrorMessage="please enter a name." ValidationExpression="/^[A-z]+$/" />
+                        <asp:ValidationSummary ID="VSSummary" runat="server" ShowMessageBox="true" DisplayMode="SingleParagraph" HeaderText="The input is incorrect" ShowSummary="false" />
                     </div>
                 </div>
             </div>

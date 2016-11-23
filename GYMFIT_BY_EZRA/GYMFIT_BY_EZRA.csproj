@@ -120,7 +120,7 @@
     <Content Include="Login.aspx" />
     <Content Include="FindTrainer.aspx" />
     <Content Include="TrainerPopup.aspx" />
-    <Content Include="userProfile.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="Book-A-Venue.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -190,12 +190,12 @@
     <Compile Include="TrainerPopup.aspx.designer.cs">
       <DependentUpon>TrainerPopup.aspx</DependentUpon>
     </Compile>
-    <Compile Include="userProfile.aspx.cs">
-      <DependentUpon>userProfile.aspx</DependentUpon>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="userProfile.aspx.designer.cs">
-      <DependentUpon>userProfile.aspx</DependentUpon>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Book-A-Venue.aspx.cs">
       <DependentUpon>Book-A-Venue.aspx</DependentUpon>

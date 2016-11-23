@@ -40,7 +40,7 @@ namespace GYMFIT
                 cmd = new SqlCommand(sqlInsert, con);
                 if (cmd.ExecuteNonQuery() == 1) {
                     LblRegisterStatus.Text = "Registered Successfully!<br />We will redirect you to the Login page.";
-                    Response.AddHeader("REFRESH", "3;URL=Login.aspx");
+                    Response.AddHeader("REFRESH", "1;URL=Login.aspx?redirect=1");
                 }
                 else
                 {
